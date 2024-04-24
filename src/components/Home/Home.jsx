@@ -68,7 +68,7 @@ function Home() {
       </Container>
 
       <a href="#" onClick={scrollToHome2}>
-        <IoIosArrowDown size={32} />
+        <IoIosArrowDown size={40} />
       </a>
 
       <div ref={home2Ref}>

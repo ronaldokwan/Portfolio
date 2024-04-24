@@ -8,9 +8,6 @@ import myImg from "../../Assets/avatar.svg";
 
 function Home2() {
   const { ref, inView } = useInView();
-  const { ref: ref2, inView: inView2 } = useInView();
-  const { ref: ref3, inView: inView3 } = useInView();
-  const { ref: ref4, inView: inView4 } = useInView();
 
   return (
     <Container
@@ -24,9 +21,9 @@ function Home2() {
           <h1
             style={{ fontSize: "2.6em" }}
             className={`home-about-description ${
-              inView2 ? "animate__animated animate__fadeInDown" : ""
+              inView ? "animate__animated animate__fadeInDown" : ""
             }`}
-            ref={ref2}
+            ref={ref}
           >
             LET ME <span className="purple">INTRODUCE</span> MYSELF
           </h1>
@@ -69,9 +66,9 @@ function Home2() {
           <Col
             md={4}
             className={`myAvatar ${
-              inView3 ? "animate__animated animate__fadeInRight" : ""
+              inView ? "animate__animated animate__fadeInRight" : ""
             }`}
-            ref={ref3}
+            ref={ref}
           >
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
@@ -82,9 +79,9 @@ function Home2() {
           <Col
             md={12}
             className={`home-about-social ${
-              inView4 ? "animate__animated animate__fadeIn" : ""
+              inView ? "animate__animated animate__fadeIn animate__slow" : ""
             }`}
-            ref={ref4}
+            ref={ref}
           >
             <h1>FIND ME ON</h1>
             <p>
