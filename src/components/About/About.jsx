@@ -1,4 +1,6 @@
+import "animate.css";
 import { Col, Container, Row } from "react-bootstrap";
+import { useInView } from "react-intersection-observer";
 import laptopImg from "../../Assets/about.png";
 import Particle from "../Particle";
 import AboutCard from "./AboutCard";
@@ -7,8 +9,9 @@ import DatabaseStack from "./DatabaseStack";
 import FrameworkStack from "./FrameworkStack";
 import LanguageStack from "./LanguageStack";
 import ToolStack from "./ToolStack";
-
 function About() {
+  const { ref: languageRef, inView: language } = useInView();
+
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -35,18 +38,28 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          <strong className="purple">Programming Languages</strong>
-        </h1>
 
-        <LanguageStack />
+        <div
+          className={`${
+            language
+              ? "animate__animated animate__fadeInLeft"
+              : "animate__animated animate__fadeOut"
+          }`}
+          ref={languageRef}
+        >
+          <h1 className="project-heading">
+            <strong className="purple">Programming Languages</strong>
+          </h1>
 
-        <h1 className="project-heading">
-          <strong className="purple">Databases</strong>
-        </h1>
+          <LanguageStack />
+        </div>
+        <div className="animate__animated animate__FadeInLeft animate__delay-1s">
+          <h1 className="project-heading">
+            <strong className="purple">Databases</strong>
+          </h1>
 
-        <DatabaseStack />
-
+          <DatabaseStack />
+        </div>
         <h1 className="project-heading">
           <strong className="purple">Libraries/Frameworks</strong>
         </h1>

@@ -7,15 +7,8 @@ import Home2 from "./Home2";
 import Type from "./Type";
 
 function Home() {
-  const { ref: topSectionRef, inView: topSectionInView } = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
-
-  const { ref: home2Ref, inView: home2InView } = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
+  const { ref: topHomeRef, inView: topHome } = useInView();
+  const { ref: bottomHomeRef, inView: bottomHome } = useInView();
 
   return (
     <section>
@@ -23,16 +16,16 @@ function Home() {
         <Particle />
         <div
           className={`${
-            topSectionInView
-              ? "animate__animated animate__fadeIn"
+            topHome
+              ? "animate__animated animate__fadeInLeft"
               : "animate__animated animate__fadeOut"
           }`}
-          ref={topSectionRef}
+          ref={topHomeRef}
         >
           <Container className="home-content">
             <Row>
               <Col md={7} className="home-header">
-                <h1 style={{ paddingBottom: 15 }} className="heading">
+                <h1 style={{ paddingBottom: 15 }}>
                   Hi There!{" "}
                   <span className="wave" role="img" aria-labelledby="wave">
                     👋🏻
@@ -59,11 +52,11 @@ function Home() {
       </Container>
       <div
         className={`${
-          home2InView
+          bottomHome
             ? "animate__animated animate__fadeIn"
             : "animate__animated animate__fadeOut"
         }`}
-        ref={home2Ref}
+        ref={bottomHomeRef}
       >
         <Home2 />
       </div>
