@@ -4,7 +4,7 @@ import { DiCss3Full, DiHtml5, DiJavascript1, DiPython } from "react-icons/di";
 import { FaC } from "react-icons/fa6";
 import { SiTypescript } from "react-icons/si";
 
-function Techstack() {
+function LanguageStack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
@@ -32,4 +32,4 @@ function Techstack() {
   );
 }
 
-export default Techstack;
+export default LanguageStack;

@@ -6,7 +6,7 @@ import {
   SiSupabase,
   SiVercel,
 } from "react-icons/si";
-function Cloudstack() {
+function CloudStack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
@@ -28,4 +28,4 @@ function Cloudstack() {
   );
 }
 
-export default Cloudstack;
+export default CloudStack;

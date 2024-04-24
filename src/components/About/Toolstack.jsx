@@ -9,7 +9,7 @@ import {
   SiVite,
   SiWindows11,
 } from "react-icons/si";
-function Toolstack() {
+function ToolStack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
@@ -40,4 +40,4 @@ function Toolstack() {
   );
 }
 
-export default Toolstack;
+export default ToolStack;

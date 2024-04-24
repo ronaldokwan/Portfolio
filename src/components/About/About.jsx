@@ -1,12 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 import laptopImg from "../../Assets/about.png";
 import Particle from "../Particle";
-import Aboutcard from "./AboutCard";
-import Cloudstack from "./Cloudstack";
-import Databasestack from "./DatabaseStack";
-import Frameworkstack from "./Frameworkstack";
-import Techstack from "./Techstack";
-import Toolstack from "./Toolstack";
+import AboutCard from "./AboutCard";
+import Cloudstack from "./CloudStack";
+import DatabaseStack from "./DatabaseStack";
+import FrameworkStack from "./FrameworkStack";
+import LanguageStack from "./LanguageStack";
+import ToolStack from "./ToolStack";
 
 function About() {
   return (
@@ -25,7 +25,7 @@ function About() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               Know Who <strong className="purple">I&apos;M</strong>
             </h1>
-            <Aboutcard />
+            <AboutCard />
           </Col>
           <Col
             md={5}
@@ -39,18 +39,18 @@ function About() {
           <strong className="purple">Programming Languages</strong>
         </h1>
 
-        <Techstack />
+        <LanguageStack />
 
         <h1 className="project-heading">
           <strong className="purple">Databases</strong>
         </h1>
 
-        <Databasestack />
+        <DatabaseStack />
 
         <h1 className="project-heading">
           <strong className="purple">Libraries/Frameworks</strong>
         </h1>
-        <Frameworkstack />
+        <FrameworkStack />
 
         <h1 className="project-heading">
           <strong className="purple">Cloud Computing</strong>
@@ -60,7 +60,7 @@ function About() {
         <h1 className="project-heading">
           <strong className="purple">Tools</strong>
         </h1>
-        <Toolstack />
+        <ToolStack />
       </Container>
     </Container>
   );

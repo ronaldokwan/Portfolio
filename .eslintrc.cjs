@@ -19,10 +19,4 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
-  overrides: [
-    {
-      files: ["**/*.js", "**/*.jsx"], // Glob pattern to scan all JS/JSX files
-      // ... other overrides
-    },
-  ],
 };

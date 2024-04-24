@@ -2,7 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import { DiMongodb } from "react-icons/di";
 import { SiPostgresql, SiRedis } from "react-icons/si";
 
-function Databasestack() {
+function DatabaseStack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
@@ -18,4 +18,4 @@ function Databasestack() {
   );
 }
 
-export default Databasestack;
+export default DatabaseStack;

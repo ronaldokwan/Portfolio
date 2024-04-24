@@ -18,11 +18,11 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, update] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
+      update(false);
     }, 1200);
 
     return () => clearTimeout(timer);
