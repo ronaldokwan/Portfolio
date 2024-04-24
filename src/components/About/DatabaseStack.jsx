@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { DiMongodb } from "react-icons/di";
 import { SiPostgresql, SiRedis } from "react-icons/si";

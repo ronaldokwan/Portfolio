@@ -12,11 +12,17 @@ module.exports = {
   settings: { react: { version: "18.2" } },
   plugins: ["react-refresh"],
   rules: {
-    "react/prop-types": false,
+    "react/prop-types": 0,
     "react/jsx-no-target-blank": "off",
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      files: ["**/*.js", "**/*.jsx"], // Glob pattern to scan all JS/JSX files
+      // ... other overrides
+    },
+  ],
 };

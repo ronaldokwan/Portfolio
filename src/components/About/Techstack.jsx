@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import { DiCss3Full, DiHtml5, DiJavascript1, DiPython } from "react-icons/di";
