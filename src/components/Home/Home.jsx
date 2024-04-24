@@ -24,7 +24,6 @@ function Home() {
     <section style={{ overflow: "hidden" }}>
       <Container fluid className="home-section" id="home">
         <Particle />
-
         <Container className="home-content">
           <Row>
             <Col
@@ -47,7 +46,6 @@ function Home() {
                 <Type />
               </div>
             </Col>
-
             <Col
               md={5}
               style={{ paddingBottom: 20 }}
@@ -66,11 +64,16 @@ function Home() {
           </Row>
         </Container>
       </Container>
-
-      <a href="#" onClick={scrollToHome2}>
-        <IoIosArrowDown size={40} />
-      </a>
-
+      <div ref={ref}>
+        <a href="#" onClick={scrollToHome2}>
+          <IoIosArrowDown
+            size={40}
+            className={`arrow-icon ${
+              inView ? "animate__animated animate__bounceInDown" : ""
+            }`}
+          />
+        </a>
+      </div>
       <div ref={home2Ref}>
         <Home2 />
       </div>

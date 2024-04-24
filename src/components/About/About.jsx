@@ -10,13 +10,13 @@ import FrameworkStack from "./FrameworkStack";
 import LanguageStack from "./LanguageStack";
 import ToolStack from "./ToolStack";
 function About() {
-  const { ref: languageRef, inView: language } = useInView();
+  const { ref, inView } = useInView();
 
   return (
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row style={{ justifyContent: "center" }}>
           <Col
             md={7}
             style={{
@@ -41,11 +41,11 @@ function About() {
 
         <div
           className={`${
-            language
+            inView
               ? "animate__animated animate__fadeInLeft"
               : "animate__animated animate__fadeOut"
           }`}
-          ref={languageRef}
+          ref={ref}
         >
           <h1 className="project-heading">
             <strong className="purple">Programming Languages</strong>
@@ -53,13 +53,13 @@ function About() {
 
           <LanguageStack />
         </div>
-        <div className="animate__animated animate__FadeInLeft animate__delay-1s">
-          <h1 className="project-heading">
-            <strong className="purple">Databases</strong>
-          </h1>
 
-          <DatabaseStack />
-        </div>
+        <h1 className="project-heading">
+          <strong className="purple">Databases</strong>
+        </h1>
+
+        <DatabaseStack />
+
         <h1 className="project-heading">
           <strong className="purple">Libraries/Frameworks</strong>
         </h1>
