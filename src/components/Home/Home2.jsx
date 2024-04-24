@@ -1,18 +1,43 @@
+import "animate.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
 import Tilt from "react-parallax-tilt";
 import myImg from "../../Assets/avatar.svg";
 
 function Home2() {
+  const { ref, inView } = useInView();
+  const { ref: ref2, inView: inView2 } = useInView();
+  const { ref: ref3, inView: inView3 } = useInView();
+  const { ref: ref4, inView: inView4 } = useInView();
+
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container
+      fluid
+      className="home-about-section"
+      id="about"
+      style={{ overflow: "hidden" }}
+    >
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple">INTRODUCE</span> MYSELF
-            </h1>
+          <h1
+            style={{ fontSize: "2.6em" }}
+            className={`home-about-description ${
+              inView2 ? "animate__animated animate__fadeInDown" : ""
+            }`}
+            ref={ref2}
+          >
+            LET ME <span className="purple">INTRODUCE</span> MYSELF
+          </h1>
+
+          <Col
+            md={8}
+            className={`home-about-description ${
+              inView ? "animate__animated animate__fadeInLeft" : ""
+            }`}
+            ref={ref}
+          >
             <p className="home-about-body">
               I am a passionate{" "}
               <i>
@@ -41,14 +66,26 @@ function Home2() {
               .
             </p>
           </Col>
-          <Col md={4} className="myAvatar">
+          <Col
+            md={4}
+            className={`myAvatar ${
+              inView3 ? "animate__animated animate__fadeInRight" : ""
+            }`}
+            ref={ref3}
+          >
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col
+            md={12}
+            className={`home-about-social ${
+              inView4 ? "animate__animated animate__fadeIn" : ""
+            }`}
+            ref={ref4}
+          >
             <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
