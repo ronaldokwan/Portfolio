@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import laptopImg from "../../Assets/about.png";
 import Particle from "../Particle";
 import AboutCard from "./AboutCard";
-import Cloudstack from "./CloudStack";
+import CloudStack from "./CloudStack";
 import DatabaseStack from "./DatabaseStack";
 import FrameworkStack from "./FrameworkStack";
 import LanguageStack from "./LanguageStack";
@@ -99,7 +99,7 @@ function About() {
           <h1 className="project-heading">
             <strong className="purple">Cloud Computing</strong>
           </h1>
-          <Cloudstack />
+          <CloudStack />
         </div>
 
         <div
