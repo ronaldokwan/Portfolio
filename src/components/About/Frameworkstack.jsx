@@ -10,6 +10,7 @@ import {
   SiSequelize,
   SiTailwindcss,
 } from "react-icons/si";
+
 function FrameworkStack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
