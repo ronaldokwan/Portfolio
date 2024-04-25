@@ -7,7 +7,6 @@ import { useInView } from "react-intersection-observer";
 
 function AboutCard() {
   const { ref, inView } = useInView();
-
   return (
     <Card className="quote-card-view">
       <Card.Body
