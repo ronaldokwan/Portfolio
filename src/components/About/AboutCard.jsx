@@ -1,12 +1,19 @@
+import "animate.css";
 import Card from "react-bootstrap/Card";
 import { FaBookOpen, FaGamepad, FaMusic } from "react-icons/fa";
 import { SiFedora } from "react-icons/si";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
+import { useInView } from "react-intersection-observer";
 
 function AboutCard() {
+  const { ref, inView } = useInView();
+
   return (
     <Card className="quote-card-view">
-      <Card.Body>
+      <Card.Body
+        className={`${inView ? "animate__animated animate__fadeInLeft" : ""}`}
+        ref={ref}
+      >
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hello there, I&apos;m <span className="purple">Ronaldo Kwan</span>,

@@ -1,19 +1,28 @@
+import "animate.css";
 import { Col, Container, Row } from "react-bootstrap";
+import { useInView } from "react-intersection-observer";
 import image from "../../Assets/Projects/1.jpg";
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 
 function Projects() {
+  const { ref, inView } = useInView();
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I&apos;ve worked on recently.
-        </p>
+        <div
+          className={`${inView ? "animate__animated animate__fadeInDown" : ""}`}
+          ref={ref}
+        >
+          <h1 className="project-heading">
+            My Recent <strong className="purple">Works </strong>
+          </h1>
+          <p style={{ color: "white" }}>
+            Here are a few projects I&apos;ve worked on recently.
+          </p>
+        </div>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard

@@ -1,5 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import {
+  SiDbeaver,
   SiExpo,
   SiGit,
   SiJest,
@@ -26,6 +27,9 @@ function ToolStack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDbeaver />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVite />

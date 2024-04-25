@@ -11,9 +11,14 @@ import LanguageStack from "./LanguageStack";
 import ToolStack from "./ToolStack";
 function About() {
   const { ref, inView } = useInView();
+  const { ref: ref1, inView: inView1 } = useInView();
+  const { ref: ref2, inView: inView2 } = useInView();
+  const { ref: ref3, inView: inView3 } = useInView();
+  const { ref: ref4, inView: inView4 } = useInView();
+  const { ref: ref5, inView: inView5 } = useInView();
 
   return (
-    <Container fluid className="about-section">
+    <Container fluid className="about-section" style={{ overflow: "hidden" }}>
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center" }}>
@@ -25,7 +30,13 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <h1
+              style={{ fontSize: "2.1em", paddingBottom: "20px" }}
+              className={`${
+                inView ? "animate__animated animate__fadeInDown" : ""
+              }`}
+              ref={ref}
+            >
               Know Who <strong className="purple">I&apos;M</strong>
             </h1>
             <AboutCard />
@@ -33,7 +44,10 @@ function About() {
           <Col
             md={5}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
+            className={`about-img ${
+              inView ? "animate__animated animate__fadeInRight" : ""
+            }`}
+            ref={ref}
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
@@ -41,11 +55,9 @@ function About() {
 
         <div
           className={`${
-            inView
-              ? "animate__animated animate__fadeInLeft"
-              : "animate__animated animate__fadeOut"
+            inView1 ? "animate__animated animate__fadeInLeft" : ""
           }`}
-          ref={ref}
+          ref={ref1}
         >
           <h1 className="project-heading">
             <strong className="purple">Programming Languages</strong>
@@ -54,26 +66,53 @@ function About() {
           <LanguageStack />
         </div>
 
-        <h1 className="project-heading">
-          <strong className="purple">Databases</strong>
-        </h1>
+        <div
+          className={`${
+            inView2 ? "animate__animated animate__fadeInRight" : ""
+          }`}
+          ref={ref2}
+        >
+          <h1 className="project-heading">
+            <strong className="purple">Databases</strong>
+          </h1>
+          <DatabaseStack />
+        </div>
 
-        <DatabaseStack />
+        <div
+          className={`${
+            inView3 ? "animate__animated animate__fadeInLeft" : ""
+          }`}
+          ref={ref3}
+        >
+          <h1 className="project-heading">
+            <strong className="purple">Libraries/Frameworks</strong>
+          </h1>
+          <FrameworkStack />
+        </div>
 
-        <h1 className="project-heading">
-          <strong className="purple">Libraries/Frameworks</strong>
-        </h1>
-        <FrameworkStack />
+        <div
+          className={`${
+            inView4 ? "animate__animated animate__fadeInRight" : ""
+          }`}
+          ref={ref4}
+        >
+          <h1 className="project-heading">
+            <strong className="purple">Cloud Computing</strong>
+          </h1>
+          <Cloudstack />
+        </div>
 
-        <h1 className="project-heading">
-          <strong className="purple">Cloud Computing</strong>
-        </h1>
-        <Cloudstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong>
-        </h1>
-        <ToolStack />
+        <div
+          className={`${
+            inView5 ? "animate__animated animate__fadeInLeft" : ""
+          }`}
+          ref={ref5}
+        >
+          <h1 className="project-heading">
+            <strong className="purple">Tools</strong>
+          </h1>
+          <ToolStack />
+        </div>
       </Container>
     </Container>
   );
