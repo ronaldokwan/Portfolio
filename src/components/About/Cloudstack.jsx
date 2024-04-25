@@ -6,6 +6,7 @@ import {
   SiSupabase,
   SiVercel,
 } from "react-icons/si";
+
 function CloudStack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
