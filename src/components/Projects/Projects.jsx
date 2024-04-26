@@ -1,7 +1,10 @@
 import "animate.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
-import image from "../../Assets/Projects/1.jpg";
+import iceCream from "../../Assets/Projects/ice-cream.png";
+import note from "../../Assets/Projects/note.png";
+import socialMediaMobile from "../../Assets/Projects/social-media-mobile.png";
+
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 
@@ -26,37 +29,35 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={image}
-              isBlog={false}
-              title="Note Taking App"
-              description="A note-taking web application that allows users to create, edit, and manage their notes in a digital format, accessible through a web browser."
-              techStack="React, Redux, Bootstrap, Express, Sequelize, PostgreSQL, "
-              ghLink="https://github.com/ronaldokwan/Note-Taking-App"
-              demoLink="https://github.com/ronaldokwan/Note-Taking-App"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={image}
+              imgPath={iceCream}
               isBlog={false}
               title="Ice Cream Shop"
               description="An e-commerce shop that allows customers to browse and purchase ice cream online"
               techStack="NextJs, Typescript, Tailwind, MongoDB"
               ghLink="https://github.com/ronaldokwan/Ice-Cream"
-              demoLink="https://github.com/ronaldokwan/Ice-Cream"
+              demoLink="https://new-next-gray.vercel.app/"
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={image}
+              imgPath={socialMediaMobile}
               isBlog={false}
-              title="Social media App"
+              title="Social media Mobile"
               description="A mobile based social media app that allows users to upload photos and videos, follow other users, and like and comment on posts."
               techStack="React Native, Expo, GraphQL, MongoDB, Redis"
               ghLink="https://github.com/ronaldokwan/Youtube-Mobile"
-              demoLink="https://github.com/ronaldokwan/Youtube-Mobile"
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={note}
+              isBlog={false}
+              title="Note Taking App"
+              description="A note-taking web application that allows users to create, edit, and manage their notes in a digital format, accessible through a web browser."
+              techStack="React, Redux, Bootstrap, Express, Sequelize, PostgreSQL, "
+              ghLink="https://github.com/ronaldokwan/Note-Taking-App"
+            />
+          </Col>{" "}
         </Row>
       </Container>
     </Container>
