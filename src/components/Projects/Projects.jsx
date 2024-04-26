@@ -1,10 +1,10 @@
 import "animate.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
+import foodie from "../../Assets/Projects/foodie.png";
 import iceCream from "../../Assets/Projects/ice-cream.png";
 import note from "../../Assets/Projects/note.png";
 import socialMediaMobile from "../../Assets/Projects/social-media-mobile.png";
-
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 
@@ -36,6 +36,16 @@ function Projects() {
               techStack="NextJs, Typescript, Tailwind, MongoDB"
               ghLink="https://github.com/ronaldokwan/Ice-Cream"
               demoLink="https://new-next-gray.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={foodie}
+              isBlog={false}
+              title="Foodie Finder"
+              description="A mobile based social media app that allows users search nearby restaurant using google map api and post photos and description of restaurants they visited."
+              techStack="React Native, MongoDB, Express, Redis, Jest, Expo"
+              ghLink="https://github.com/ronaldokwan/Foodie-Finder"
             />
           </Col>
           <Col md={4} className="project-card">
