@@ -10,7 +10,7 @@ function ProjectCards(props) {
   return (
     <Card
       className={`project-card-view ${
-        inView ? "animate__animated animate__bounceIn" : ""
+        inView ? "animate__animated animate__fadeIn" : ""
       }`}
       ref={ref}
     >
