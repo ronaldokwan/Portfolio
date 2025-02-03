@@ -35,7 +35,7 @@ function Projects() {
               description="An e-commerce shop that allows customers to browse and purchase ice cream online"
               techStack="NextJs, Typescript, Tailwind, MongoDB"
               ghLink="https://github.com/ronaldokwan/Ice-Cream"
-              demoLink="https://new-next-gray.vercel.app/"
+              // demoLink="https://new-next-gray.vercel.app/"
             />
           </Col>
           <Col md={4} className="project-card">
