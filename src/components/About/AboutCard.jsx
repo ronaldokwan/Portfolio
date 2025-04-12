@@ -49,8 +49,8 @@ function AboutCard() {
               <span className="purple">Piano</span> <FaMusic />
             </li>
                  <li className="about-activity">
-              <VscDebugBreakpointLog className="purple" /> Physical{" "}
-              <span className="purple">Activity</span> <CgGym />
+              <VscDebugBreakpointLog className="purple" />
+              <span className="purple">Physical Activity</span> <CgGym />
             </li>
           </ul>
         </blockquote>
