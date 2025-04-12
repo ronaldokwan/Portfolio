@@ -47,6 +47,10 @@ function AboutCard() {
               <VscDebugBreakpointLog className="purple" /> Playing{" "}
               <span className="purple">Piano</span> <FaMusic />
             </li>
+                 <li className="about-activity">
+              <VscDebugBreakpointLog className="purple" /> Physical{" "}
+              <span className="purple">Activity</span> <FaMusic />
+            </li>
           </ul>
         </blockquote>
       </Card.Body>
