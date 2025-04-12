@@ -1,5 +1,6 @@
 import "animate.css";
 import Card from "react-bootstrap/Card";
+import { CgGym } from "react-icons/cg";
 import { FaBookOpen, FaGamepad, FaMusic } from "react-icons/fa";
 import { SiFedora } from "react-icons/si";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
@@ -49,7 +50,7 @@ function AboutCard() {
             </li>
                  <li className="about-activity">
               <VscDebugBreakpointLog className="purple" /> Physical{" "}
-              <span className="purple">Activity</span> <FaMusic />
+              <span className="purple">Activity</span> <CgGym />
             </li>
           </ul>
         </blockquote>
