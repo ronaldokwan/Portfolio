@@ -1,7 +1,7 @@
 # Portfolio
 
-Live Demo : https://portfolio-ronaldokwans-projects.vercel.app/
+Live Demo : https://ronaldokwan.vercel.app/
 
-[![portfolio](./images/portfolio.png)](https://portfolio-ronaldokwans-projects.vercel.app/)
+[![portfolio](./images/portfolio.png)](https://ronaldokwan.vercel.app/)
 
 ---
