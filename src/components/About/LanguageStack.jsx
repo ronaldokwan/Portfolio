@@ -3,6 +3,7 @@ import { CgCPlusPlus } from "react-icons/cg";
 import { DiCss3Full, DiHtml5, DiJavascript1, DiPython } from "react-icons/di";
 import { FaC, FaJava } from "react-icons/fa6";
 import { SiPhp, SiTypescript } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 function LanguageStack() {
   return (
@@ -27,6 +28,9 @@ function LanguageStack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaJava />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <TbBrandCSharp />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiHtml5 />

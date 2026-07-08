@@ -1,4 +1,5 @@
 import { Col, Row } from "react-bootstrap";
+import { FaAws } from "react-icons/fa";
 import {
   SiCloudflare,
   SiFirebase,
@@ -11,6 +12,9 @@ import {
 function CloudStack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaAws />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiGooglecloud />
       </Col>

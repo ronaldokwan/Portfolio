@@ -8,23 +8,18 @@ import { MotionCol, MotionRow } from "../motionComponents";
 // TODO: replace the "#" placeholders with the real certificate URLs.
 const certifications = [
   {
+    title: "Front-End Development",
+    issuer: "Meta",
+    link: "#",
+  },
+  {
+    title: "Back-End Development",
+    issuer: "Meta",
+    link: "#",
+  },
+  {
     title: "IELTS",
-    issuer: "Overall Band 7.0",
-    link: "#",
-  },
-  {
-    title: "Web Design for Everybody",
-    issuer: "University of Michigan",
-    link: "#",
-  },
-  {
-    title: "Introduction to Front-End Development",
-    issuer: "Meta",
-    link: "#",
-  },
-  {
-    title: "Introduction to Back-End Development",
-    issuer: "Meta",
+    issuer: "English C1 · Overall Band 7.0",
     link: "#",
   },
 ];

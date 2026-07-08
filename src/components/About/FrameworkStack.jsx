@@ -4,6 +4,7 @@ import {
   SiApollographql,
   SiBootstrap,
   SiExpress,
+  SiFlask,
   SiGraphql,
   SiJquery,
   SiLaravel,
@@ -46,6 +47,9 @@ function FrameworkStack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiLaravel />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFlask />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSequelize />

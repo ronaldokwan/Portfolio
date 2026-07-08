@@ -2,7 +2,6 @@ import { Container } from "react-bootstrap";
 import foodie from "../../Assets/Projects/foodie.webp";
 import iceCream from "../../Assets/Projects/ice-cream.webp";
 import note from "../../Assets/Projects/note.webp";
-import socialMediaMobile from "../../Assets/Projects/social-media-mobile.webp";
 import {
   fadeDown,
   staggerContainer,
@@ -40,9 +39,9 @@ function Projects() {
               imgWidth={800}
               imgHeight={677}
               isBlog={false}
-              title="Ice Cream Shop"
-              description="An e-commerce shop that allows customers to browse and purchase ice cream online"
-              techStack="NextJs, Typescript, Tailwind, MongoDB"
+              title="Ice Cream eCommerce"
+              description="A full-stack eCommerce web app featuring product browsing, search filtering, infinite-scroll browsing, and a personalised wishlist across 100+ product listings. Secured with JWT auth, bcrypt hashing, and Zod-validated REST APIs, shipped to production on Vercel."
+              techStack="Next.js, TypeScript, MongoDB, Tailwind CSS"
               ghLink="https://github.com/ronaldokwan/Ice-Cream"
               // demoLink="https://new-next-gray.vercel.app/"
             />
@@ -54,21 +53,9 @@ function Projects() {
               imgHeight={1415}
               isBlog={false}
               title="Foodie Finder"
-              description="A mobile based restaurant finder that helps users discover nearby restaurants using the Google Maps API, with AI-powered recommendations via the ChatGPT API."
-              techStack="React Native, MongoDB, Express, Redis, Jest, Expo"
+              description="A cross-platform restaurant discovery platform featuring Google Places API for location-based search, an AI dining recommendation chatbot, and a community feed, backed by a secure REST API with 18+ endpoints, JWT auth, Redis caching, and Jest tests."
+              techStack="React Native, Expo, Express, MongoDB, Redis, Jest"
               ghLink="https://github.com/ronaldokwan/Foodie-Finder"
-            />
-          </MotionCol>
-          <MotionCol md={4} className="project-card" variants={staggerItem}>
-            <ProjectCard
-              imgPath={socialMediaMobile}
-              imgWidth={490}
-              imgHeight={1023}
-              isBlog={false}
-              title="Social media Mobile"
-              description="A YouTube-themed mobile social media app that allows users to upload photos and videos, follow other users, and like and comment on posts."
-              techStack="React Native, Expo, GraphQL, MongoDB, Redis"
-              ghLink="https://github.com/ronaldokwan/Youtube-Mobile"
             />
           </MotionCol>
           <MotionCol md={4} className="project-card" variants={staggerItem}>
@@ -78,8 +65,8 @@ function Projects() {
               imgHeight={877}
               isBlog={false}
               title="Note Taking App"
-              description="A note-taking web application to create, edit, and manage notes, integrated with the Midtrans payment API, Google login API, and RapidAPI."
-              techStack="React, Redux, Bootstrap, Express, Sequelize, PostgreSQL"
+              description="A full-stack note-taking web app with full CRUD management, tagging, search, pagination, and archiving. Integrates 4 third-party APIs (Google OAuth/JWT, Midtrans payments, and 2 RapidAPI services), tested with Jest and Supertest and deployed on Firebase Hosting."
+              techStack="React, Redux, Express, Sequelize, PostgreSQL, Bootstrap"
               ghLink="https://github.com/ronaldokwan/Note-Taking-App"
             />
           </MotionCol>{" "}

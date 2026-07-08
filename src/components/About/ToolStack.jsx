@@ -4,6 +4,7 @@ import {
   SiDbeaver,
   SiExpo,
   SiGit,
+  SiGitlab,
   SiJest,
   SiLinux,
   SiPostman,
@@ -28,6 +29,9 @@ function ToolStack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGitlab />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiDbeaver />

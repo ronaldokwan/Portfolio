@@ -8,6 +8,7 @@ import AboutCard from "./AboutCard";
 import Certifications from "./Certifications";
 import CloudStack from "./CloudStack";
 import DatabaseStack from "./DatabaseStack";
+import Education from "./Education";
 import Experience from "./Experience";
 import FrameworkStack from "./FrameworkStack";
 import LanguageStack from "./LanguageStack";
@@ -52,6 +53,13 @@ function About() {
             Work <strong className="purple">Experience</strong>
           </h1>
           <Experience />
+        </Reveal>
+
+        <Reveal variants={fadeRight}>
+          <h1 className="project-heading">
+            <strong className="purple">Education</strong>
+          </h1>
+          <Education />
         </Reveal>
 
         <Reveal variants={fadeLeft}>

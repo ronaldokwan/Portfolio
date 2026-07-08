@@ -2,22 +2,26 @@ import Card from "react-bootstrap/Card";
 import { staggerContainer, staggerItem, viewportOnce } from "../animations";
 import { MotionCol, MotionRow } from "../motionComponents";
 
-const experiences = [
+const education = [
   {
-    role: "Software Developer",
-    company: "PT Dana Purna Investama",
-    location: "Jakarta, Indonesia",
-    type: "Full-time",
-    period: "June 2024 – January 2025",
+    degree: "Bachelor of Information Technology",
+    school: "University of Technology Sydney (UTS)",
+    period: "January 2025 – June 2027",
     points: [
-      "Built and maintained 5+ production web apps (Laravel, CodeIgniter, PHP, JavaScript, and jQuery), sustaining 99.9% uptime and bridging front-end interactivity with scalable back-end logic.",
-      "Implemented OAuth 2.0 integration, establishing robust, secure authentication protocols and standardized data exchange between internal systems and third-party providers.",
-      "Modernized legacy infrastructure by migrating deprecated Google APIs to current versions, improving API response speeds by 15% and eliminating critical compatibility bottlenecks.",
+      "Major: Enterprise Software Development",
+      "WAM: 88.75 (High Distinction)",
+      "UTS Academic Merit Scholarship recipient",
     ],
+  },
+  {
+    degree: "Full Stack JavaScript Coding Bootcamp",
+    school: "Hacktiv8",
+    period: "January 2024 – April 2024",
+    points: ["Grade: 94.70 / 100 (High Distinction)"],
   },
 ];
 
-function Experience() {
+function Education() {
   return (
     <MotionRow
       style={{ justifyContent: "center", paddingBottom: "50px" }}
@@ -26,7 +30,7 @@ function Experience() {
       whileInView="visible"
       viewport={viewportOnce}
     >
-      {experiences.map((exp, index) => (
+      {education.map((edu, index) => (
         <MotionCol
           md={6}
           className="project-card"
@@ -36,19 +40,18 @@ function Experience() {
           <Card className="project-card-view">
             <Card.Body style={{ textAlign: "left" }}>
               <Card.Title style={{ fontSize: "1.4em" }}>
-                {exp.role}{" "}
-                <span className="purple">@ {exp.company}</span>
+                {edu.degree}
               </Card.Title>
               <Card.Subtitle
                 className="mb-2"
                 style={{ color: "#c8a2e0", fontStyle: "italic" }}
               >
-                {exp.type} · {exp.location}
+                <span className="purple">{edu.school}</span>
                 <br />
-                {exp.period}
+                {edu.period}
               </Card.Subtitle>
               <ul style={{ textAlign: "justify", paddingLeft: "1.2em" }}>
-                {exp.points.map((point, i) => (
+                {edu.points.map((point, i) => (
                   <li key={i} style={{ marginBottom: "6px" }}>
                     {point}
                   </li>
@@ -62,4 +65,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Education;
