@@ -6,13 +6,18 @@ import { MotionCol } from "../motionComponents";
 import Particle from "../Particle";
 import AboutCard from "./AboutCard";
 import Certifications from "./Certifications";
-import CloudStack from "./CloudStack";
-import DatabaseStack from "./DatabaseStack";
 import Education from "./Education";
 import Experience from "./Experience";
-import FrameworkStack from "./FrameworkStack";
-import LanguageStack from "./LanguageStack";
-import ToolStack from "./ToolStack";
+import { cloud, databases, frameworks, languages, tools } from "./stacks";
+import TechStack from "./TechStack";
+
+const techSections = [
+  { title: "Programming Languages", icons: languages },
+  { title: "Databases", icons: databases },
+  { title: "Libraries/Frameworks", icons: frameworks },
+  { title: "Cloud Computing", icons: cloud },
+  { title: "Tools", icons: tools },
+];
 
 function About() {
   return (
@@ -62,40 +67,14 @@ function About() {
           <Education />
         </Reveal>
 
-        <Reveal variants={fadeLeft}>
-          <h1 className="project-heading">
-            <strong className="purple">Programming Languages</strong>
-          </h1>
-          <LanguageStack />
-        </Reveal>
-
-        <Reveal variants={fadeRight}>
-          <h1 className="project-heading">
-            <strong className="purple">Databases</strong>
-          </h1>
-          <DatabaseStack />
-        </Reveal>
-
-        <Reveal variants={fadeLeft}>
-          <h1 className="project-heading">
-            <strong className="purple">Libraries/Frameworks</strong>
-          </h1>
-          <FrameworkStack />
-        </Reveal>
-
-        <Reveal variants={fadeRight}>
-          <h1 className="project-heading">
-            <strong className="purple">Cloud Computing</strong>
-          </h1>
-          <CloudStack />
-        </Reveal>
-
-        <Reveal variants={fadeLeft}>
-          <h1 className="project-heading">
-            <strong className="purple">Tools</strong>
-          </h1>
-          <ToolStack />
-        </Reveal>
+        {techSections.map(({ title, icons }, index) => (
+          <Reveal key={title} variants={index % 2 === 0 ? fadeLeft : fadeRight}>
+            <h1 className="project-heading">
+              <strong className="purple">{title}</strong>
+            </h1>
+            <TechStack icons={icons} />
+          </Reveal>
+        ))}
 
         <Reveal variants={fadeRight}>
           <h1 className="project-heading">

@@ -12,8 +12,7 @@ import Type from "./Type";
 function Home() {
   // scroll to home2
   const home2Ref = useRef(null);
-  const scrollToHome2 = (event) => {
-    event.preventDefault();
+  const scrollToHome2 = () => {
     home2Ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -34,7 +33,7 @@ function Home() {
             >
               <h1 style={{ paddingBottom: 15 }}>
                 Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
+                <span className="wave" role="img" aria-label="waving hand">
                   👋🏻
                 </span>
               </h1>
@@ -55,7 +54,7 @@ function Home() {
             >
               <img
                 src={homeLogo}
-                alt="home pic"
+                alt="Illustration of a developer coding at a desk"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
@@ -64,7 +63,12 @@ function Home() {
         </Container>
       </Container>
       <div>
-        <a href="#" onClick={scrollToHome2}>
+        <button
+          type="button"
+          onClick={scrollToHome2}
+          aria-label="Scroll to introduction"
+          style={{ background: "none", border: "none", padding: 0 }}
+        >
           <motion.span
             style={{ display: "inline-block" }}
             initial={{ opacity: 0 }}
@@ -76,7 +80,7 @@ function Home() {
           >
             <IoIosArrowDown size={40} className="arrow-icon" />
           </motion.span>
-        </a>
+        </button>
       </div>
       <div ref={home2Ref}>
         <Home2 />

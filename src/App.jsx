@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense } from "react";
 import {
   Navigate,
   Route,
@@ -20,20 +20,9 @@ const Projects = lazy(() => import("./components/Projects/Projects"));
 const About = lazy(() => import("./components/About/About"));
 
 function App() {
-  const [load, update] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      update(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <div className="App">
         <Navbar />
         <ScrollToTop />
         <Suspense fallback={<Preloader load={true} />}>
