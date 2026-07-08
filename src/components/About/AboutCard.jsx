@@ -20,7 +20,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hello there, I&apos;m <span className="purple">Ronaldo Kwan</span>,
-            a passionate <span className="purple">Full Stack Developer</span> and
+            a passionate <span className="purple">Software Engineer</span> and
             currently a student at{" "}
             <span className="purple">University of Technology Sydney (UTS)</span>.
             I&apos;m excited to continue growing in the{" "}

@@ -46,7 +46,7 @@ function Home2() {
             <p className="home-about-body">
               I am a passionate{" "}
               <i>
-                <b className="purple">Full Stack Developer</b>
+                <b className="purple">Software Engineer</b>
               </i>{" "}
               with a strong foundation in computer science and a passion for
               creating efficient, user-friendly applications.
