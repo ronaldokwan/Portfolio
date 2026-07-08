@@ -4,7 +4,7 @@ import { MotionCol, MotionRow } from "../motionComponents";
 
 const experiences = [
   {
-    role: "Software Developer",
+    role: "Software Engineer",
     company: "PT Dana Purna Investama",
     location: "Jakarta, Indonesia",
     type: "Full-time",

@@ -15,6 +15,7 @@ import {
   SiBootstrap,
   SiCloudflare,
   SiDbeaver,
+  SiDocker,
   SiExpo,
   SiExpress,
   SiFirebase,
@@ -87,6 +88,7 @@ export const frameworks = [
 export const cloud = [
   { Icon: FaAws, label: "AWS" },
   { Icon: SiGooglecloud, label: "Google Cloud" },
+  { Icon: SiDocker, label: "Docker" },
   { Icon: SiVercel, label: "Vercel" },
   { Icon: SiFirebase, label: "Firebase" },
   { Icon: SiGithub, label: "GitHub" },

@@ -9,8 +9,8 @@ const education = [
     period: "January 2025 – June 2027",
     points: [
       "Major: Enterprise Software Development",
-      "WAM: 88.75 (High Distinction)",
-      "UTS Academic Merit Scholarship recipient",
+      "WAM: 88.50 (High Distinction)",
+      "UTS Academic Merit International Scholarship recipient",
     ],
   },
   {
