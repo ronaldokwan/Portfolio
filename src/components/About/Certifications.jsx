@@ -5,22 +5,16 @@ import { FaCertificate } from "react-icons/fa";
 import { staggerContainer, staggerItem, viewportOnce } from "../animations";
 import { MotionCol, MotionRow } from "../motionComponents";
 
-// TODO: replace the "#" placeholders with the real certificate URLs.
 const certifications = [
   {
     title: "Front-End Development",
     issuer: "Meta",
-    link: "#",
+    link: "https://coursera.org/share/1fa4482ef50b4acff187aaaf2d7cbfc9",
   },
   {
     title: "Back-End Development",
     issuer: "Meta",
-    link: "#",
-  },
-  {
-    title: "IELTS",
-    issuer: "English C1 · Overall Band 7.0",
-    link: "#",
+    link: "https://coursera.org/share/7350c7df189ca1a533bff9f8d651dbef",
   },
 ];
 
