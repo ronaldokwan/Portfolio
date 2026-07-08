@@ -1,4 +1,15 @@
 {
   "version": "0.2",
-  "words": ["Laravel", "ronaldokwan", "Midtrans", "tsparticles"]
+  "words": [
+    "Laravel",
+    "ronaldokwan",
+    "Midtrans",
+    "tsparticles",
+    "fontsource",
+    "fullhuman",
+    "purgecss",
+    "safelist",
+    "safelisted"
+  ],
+  "ignoreRegExpList": ["/\\^?[a-z]+\\[[a-z]+\\]\\?-/", "/\\^collaps/"]
 }

@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { Container, Row } from "react-bootstrap";
 import { IoIosArrowDown } from "react-icons/io";
-import homeLogo from "../../Assets/home-main.svg";
-import { fadeLeft, fadeRight, viewportOnce } from "../animations";
+// Served from public/ under a stable URL so index.html can preload it — this
+// image is the LCP element and must not wait for the JS bundle.
+const homeLogo = "/home-main.webp";
+import { fadeLeft, slideRight, viewportOnce } from "../animations";
 import { MotionCol } from "../motionComponents";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -47,7 +49,7 @@ function Home() {
             <MotionCol
               md={5}
               style={{ paddingBottom: 20 }}
-              variants={fadeRight}
+              variants={slideRight}
               initial="hidden"
               whileInView="visible"
               viewport={viewportOnce}
@@ -56,7 +58,10 @@ function Home() {
                 src={homeLogo}
                 alt="Illustration of a developer coding at a desk"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                width={900}
+                height={900}
+                fetchPriority="high"
+                style={{ maxHeight: "450px", width: "auto" }}
               />
             </MotionCol>
           </Row>

@@ -27,6 +27,14 @@ export const fadeRight = {
   visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: EASE } },
 };
 
+// Transform-only slide (no opacity) for the hero image: it is the page's LCP
+// element, and a fade from opacity 0 delays the LCP paint by the whole
+// animation. A pure translate keeps it paintable from the first frame.
+export const slideRight = {
+  hidden: { x: 60 },
+  visible: { x: 0, transition: { duration: 0.7, ease: EASE } },
+};
+
 // Container that staggers the reveal of its children (cards, icons, etc.).
 export const staggerContainer = {
   hidden: {},

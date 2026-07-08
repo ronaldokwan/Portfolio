@@ -78,7 +78,13 @@ function Home2() {
             viewport={viewportOnce}
           >
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid"
+                alt="avatar"
+                width={217}
+                height={237}
+              />
             </Tilt>
           </MotionCol>
         </Row>

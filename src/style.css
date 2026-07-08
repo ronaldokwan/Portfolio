@@ -705,6 +705,7 @@ button:focus {
 /* Visitors who ask their OS to minimize motion get a calm, jank-free site:
    near-instant transitions, no looping/parallax animation, instant scrolling. */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

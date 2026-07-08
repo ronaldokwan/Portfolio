@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/about.webp";
 import { fadeDown, fadeLeft, fadeRight, viewportOnce } from "../animations";
 import { Reveal } from "../motion";
 import { MotionCol } from "../motionComponents";
@@ -49,7 +49,13 @@ function About() {
             whileInView="visible"
             viewport={viewportOnce}
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img
+              src={laptopImg}
+              alt="about"
+              className="img-fluid"
+              width={1000}
+              height={689}
+            />
           </MotionCol>
         </Row>
 
