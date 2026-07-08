@@ -11,11 +11,15 @@
     <meta name="author" content="Ronaldo Kwan" />
     <meta name="theme-color" content="#1b1a2e" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <!-- Hero illustration is the LCP element; fetch it before the JS bundle asks for it. -->
+    <!-- Hero illustration is the LCP element; fetch it before the JS bundle asks
+         for it. srcset/sizes here must mirror the <img> in Home.jsx so the
+         preloaded variant is the one the browser actually uses. -->
     <link
       rel="preload"
       as="image"
       href="/home-main.webp"
+      imagesrcset="/home-main-450.webp 450w, /home-main-680.webp 680w, /home-main.webp 900w"
+      imagesizes="(max-width: 767px) 92vw, 450px"
       fetchpriority="high"
     />
     <link rel="canonical" href="https://ronaldokwan.vercel.app/" />

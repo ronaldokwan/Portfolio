@@ -9,10 +9,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copyright">
-          <h3>Designed and Developed by Ronaldo Kwan</h3>
+          <p>Designed and Developed by Ronaldo Kwan</p>
         </Col>
         <Col md="4" className="footer-copyright">
-          <h3>&copy; {year} Ronaldo Kwan. All rights reserved.</h3>
+          <p>&copy; {year} Ronaldo Kwan. All rights reserved.</p>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -22,6 +22,7 @@ function Footer() {
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub profile"
               >
                 <AiFillGithub />
               </a>
@@ -32,6 +33,7 @@ function Footer() {
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
               >
                 <FaLinkedinIn />
               </a>

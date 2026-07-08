@@ -56,6 +56,8 @@ function Home() {
             >
               <img
                 src={homeLogo}
+                srcSet="/home-main-450.webp 450w, /home-main-680.webp 680w, /home-main.webp 900w"
+                sizes="(max-width: 767px) 92vw, 450px"
                 alt="Illustration of a developer coding at a desk"
                 className="img-fluid"
                 width={900}

@@ -108,6 +108,7 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-color  home-social-icons"
+                  aria-label="GitHub profile"
                 >
                   <AiFillGithub />
                 </a>
@@ -118,6 +119,7 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-color  home-social-icons"
+                  aria-label="LinkedIn profile"
                 >
                   <FaLinkedinIn />
                 </a>

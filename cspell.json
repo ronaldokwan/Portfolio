@@ -9,7 +9,8 @@
     "fullhuman",
     "purgecss",
     "safelist",
-    "safelisted"
+    "safelisted",
+    "jank"
   ],
   "ignoreRegExpList": ["/\\^?[a-z]+\\[[a-z]+\\]\\?-/", "/\\^collaps/"]
 }
