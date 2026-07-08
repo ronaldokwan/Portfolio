@@ -10,7 +10,8 @@
     "purgecss",
     "safelist",
     "safelisted",
-    "jank"
+    "jank",
+    "nosniff"
   ],
   "ignoreRegExpList": ["/\\^?[a-z]+\\[[a-z]+\\]\\?-/", "/\\^collaps/"]
 }
