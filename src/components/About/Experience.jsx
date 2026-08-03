@@ -10,9 +10,10 @@ const experiences = [
     type: "Full-time",
     period: "June 2024 – January 2025",
     points: [
-      "Built and maintained 5+ production web apps (Laravel, CodeIgniter, PHP, JavaScript, and jQuery), sustaining 99.9% uptime and bridging front-end interactivity with scalable back-end logic.",
-      "Implemented OAuth 2.0 integration, establishing robust, secure authentication protocols and standardized data exchange between internal systems and third-party providers.",
-      "Modernized legacy infrastructure by migrating deprecated Google APIs to current versions, improving API response speeds by 15% and eliminating critical compatibility bottlenecks.",
+      "Built and maintained 5+ production web applications serving 1,000+ active users, owning features across the full lifecycle from design through deployment with Laravel, CodeIgniter, PHP, JavaScript, and MySQL.",
+      "Designed and implemented RESTful APIs and MySQL database schemas to power core product features, collaborating closely with a 6-person cross-functional team (Project Lead, 4 Developers, Quality Assurance).",
+      "Implemented OAuth 2.0 integration, establishing robust, secure authentication protocols, centralised token management, and standardised data exchange between internal systems and external third-party providers.",
+      "Migrated deprecated Google APIs to current versions ahead of end-of-life deadlines, refactoring legacy integration code across applications, cutting API response times by 15% and preventing service disruptions.",
     ],
   },
 ];

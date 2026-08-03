@@ -40,7 +40,7 @@ function Projects() {
               imgHeight={677}
               isBlog={false}
               title="Ice Cream eCommerce"
-              description="A full-stack eCommerce web app featuring product browsing, search filtering, infinite-scroll browsing, and a personalised wishlist across 100+ product listings. Secured with JWT auth, bcrypt hashing, and Zod-validated REST APIs, shipped to production on Vercel."
+              description="A responsive full-stack eCommerce web app with keyword search and filtering, infinite-scroll pagination, and per-user wishlists across 100+ listings, using server-side rendering for fast loads and SEO. Secured with JWT auth, salted bcrypt hashing, and authorisation middleware, deployed on Vercel with an automated CI/CD pipeline and real-time Core Web Vitals analytics."
               techStack="Next.js, TypeScript, MongoDB, Tailwind CSS"
               ghLink="https://github.com/ronaldokwan/Ice-Cream"
               // demoLink="https://new-next-gray.vercel.app/"
@@ -53,7 +53,7 @@ function Projects() {
               imgHeight={1415}
               isBlog={false}
               title="Foodie Finder"
-              description="A cross-platform restaurant discovery platform featuring Google Places API for location-based search, an AI dining recommendation chatbot, and a community feed, backed by a secure REST API with 18+ endpoints, JWT auth, Redis caching, and Jest tests."
+              description="A cross-platform mobile restaurant discovery app featuring location-based search (Google Places API), a ChatGPT AI dining-recommendation chatbot, and a community feed with likes and personalised preferences. Backed by an Express API with token-based auth, Redis caching that cut repeat search times from ~600ms to under 100ms, and Jest tests validating core user flows."
               techStack="React Native, Expo, Express, MongoDB, Redis, Jest"
               ghLink="https://github.com/ronaldokwan/Foodie-Finder"
             />
@@ -65,7 +65,7 @@ function Projects() {
               imgHeight={877}
               isBlog={false}
               title="Note Taking App"
-              description="A full-stack note-taking web app with full CRUD management, tagging, search, pagination, and archiving. Integrates 4 third-party APIs (Google OAuth/JWT, Midtrans payments, and 2 RapidAPI services), tested with Jest and Supertest and deployed on Firebase Hosting."
+              description="A full-stack CRUD note-taking web app with tagging, keyword search, server-side pagination, and archiving. Integrates 4 third-party APIs: the Midtrans payment gateway, Google OAuth sign-in, and 2 RapidAPI services."
               techStack="React, Redux, Express, Sequelize, PostgreSQL, Bootstrap"
               ghLink="https://github.com/ronaldokwan/Note-Taking-App"
             />

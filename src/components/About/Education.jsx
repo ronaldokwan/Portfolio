@@ -6,18 +6,18 @@ const education = [
   {
     degree: "Bachelor of Information Technology",
     school: "University of Technology Sydney (UTS)",
-    period: "January 2025 – June 2027",
+    period: "January 2025 – June 2027 (Expected)",
     points: [
-      "Major: Enterprise Software Development",
+      "Major: Enterprise Software Development | Minor: Computer Graphics and Animation",
       "WAM: 88.50 (High Distinction)",
       "UTS Academic Merit International Scholarship recipient",
     ],
   },
   {
-    degree: "Full Stack JavaScript Coding Bootcamp",
+    degree: "Full-Stack JavaScript Coding Bootcamp",
     school: "Hacktiv8",
     period: "January 2024 – April 2024",
-    points: ["Grade: 94.70 / 100 (High Distinction)"],
+    points: ["Grade: 94.70 (High Distinction)"],
   },
 ];
 

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Card from "react-bootstrap/Card";
 import { CgGym } from "react-icons/cg";
 import { FaBookOpen, FaGamepad, FaMusic } from "react-icons/fa";
-import { SiFedora } from "react-icons/si";
+import { SiUbuntu } from "react-icons/si";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 import { fadeLeft, viewportOnce } from "../animations";
 
@@ -41,8 +41,8 @@ function AboutCard() {
 
             <li className="about-activity">
               <VscDebugBreakpointLog className="purple" /> Exploring{" "}
-              <span className="purple">Linux</span>, currently Fedora{" "}
-              <SiFedora />
+              <span className="purple">Linux</span>, currently Ubuntu{" "}
+              <SiUbuntu />
             </li>
 
             <li className="about-activity">

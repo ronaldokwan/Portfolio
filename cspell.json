@@ -3,6 +3,7 @@
   "words": [
     "Laravel",
     "ronaldokwan",
+    "Ronaldo",
     "Midtrans",
     "tsparticles",
     "fontsource",
@@ -11,7 +12,23 @@
     "safelist",
     "safelisted",
     "jank",
-    "nosniff"
+    "nosniff",
+    "Bootcamp",
+    "Hacktiv",
+    "Purna",
+    "Investama",
+    "centralised",
+    "standardised",
+    "authorisation",
+    "personalised",
+    "Apollographql",
+    "Dbeaver",
+    "Githubactions",
+    "Gnubash",
+    "Googlecloud",
+    "Nextdotjs",
+    "Supabase",
+    "paintable"
   ],
   "ignoreRegExpList": ["/\\^?[a-z]+\\[[a-z]+\\]\\?-/", "/\\^collaps/"]
 }
